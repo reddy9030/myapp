@@ -1,3 +1,4 @@
 Hello
 This is very best use of Git and visual studio code
 [ractice more to familiar with GIT commands]
+Hello this is a fresh copy
