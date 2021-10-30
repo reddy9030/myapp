@@ -8,7 +8,7 @@
         state: present
     - name: copy code to remote machine
       copy:
-        src: index.htm
+        src: info.txt
         dest: /var/www/html
     - name: start apache
       service:
