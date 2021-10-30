@@ -3,7 +3,7 @@
   become: yes
   tasks:
      - name: install apache
-        yum:
+       yum:
           name: httpd
          state: present
      - name: copy code to remote machine
