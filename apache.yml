@@ -9,7 +9,7 @@
     - name: copy code to remote machine
       copy:
         src: index.htm
-        des: /var/www/html
+        dest: /var/www/html
     - name: start apache
       service:
           name: httpd
