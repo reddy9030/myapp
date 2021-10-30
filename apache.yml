@@ -1,13 +1,12 @@
---
 - hosts: 172.31.90.140
   become: yes
-  tasks: 
+  tasks:
      - name: install apache
         yum:
           name: httpd
          state: present
      - name: copy code to remote machine
-       copy: 
+       copy:
           src: index.htm
           des: /var/www/html
      - name: start apache
