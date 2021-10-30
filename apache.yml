@@ -8,8 +8,8 @@
         state: present
     - name: copy code to remote machine
       copy:
-      src: index.htm
-      des: /var/www/html
+        src: index.htm
+        des: /var/www/html
     - name: start apache
       service:
           name: httpd
