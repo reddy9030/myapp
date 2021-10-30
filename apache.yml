@@ -12,6 +12,6 @@
           des: /var/www/html
      - name: start apache
        service:
-          name: httpd
-        enable: yes
-         state: started
+            name: httpd
+          enable: yes
+          state: started
