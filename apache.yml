@@ -2,6 +2,7 @@
 - hosts: 172.31.90.140
   become: yes
   tasks:
+<<<<<<< HEAD
      - name: install apache
        yum:
       -name: httpd
@@ -13,5 +14,18 @@
      - name: start apache
        service:
             name: httpd
+=======
+    - name: Install the latest version of Apache
+      yum: 
+        name: httpd
+        state: present
+    - name: copy code to remote machine
+      copy:
+        src: index.htm
+        des: /var/www/html
+    - name: start apache
+      service:
+          name: httpd
+>>>>>>> fe535b02e0ccc1a494d697bfdaffb33dfc7788e3
           enable: yes
           state: started
